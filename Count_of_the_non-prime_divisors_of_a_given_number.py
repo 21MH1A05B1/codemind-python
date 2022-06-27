@@ -1,19 +1,16 @@
 def prime(n):
-    if n==1:
-        return 0
-    for i in range(2,int(n**0.5)+1):
-        if n%i==0:
-            return False
+    if n>1:
+        for i in range(2,(n//2)+1):
+            if n%i==0:
+                return False
+        else:
+            return True
     else:
-        return True
+         return False
 n=int(input())
 c=0
-b=0
 for i in range(1,n+1):
     if n%i==0:
-        if prime(i):
+        if prime(i)==0:
             c+=1
-        else:
-            b+=1
-print(b)
-        
+print(c)
