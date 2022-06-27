@@ -1,4 +1,5 @@
 def prime(n):
+
     if n==1:
         return False
     for i in range(2,int(n**0.5)+1):
@@ -14,3 +15,4 @@ while a<=b:
         c+=1
     a+=1
 print(c)
+    
