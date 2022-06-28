@@ -9,3 +9,5 @@ while a*(a+1)<=n:
     a+=1
 if c==0:
     print('NO')
+
+           
