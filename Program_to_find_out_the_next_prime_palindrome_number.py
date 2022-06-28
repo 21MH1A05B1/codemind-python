@@ -1,21 +1,22 @@
 def prime(n):
-    for i in range(2,int(n**0.5)+1):
+    for i in range(2,(n//2)+1):
         if n%i==0:
             return False
     else:
         return True
+
 n=int(input())
-a=n+1
-while a!=0:
-    if prime(a):
-        b=a
+g=n+1
+while g!=0:
+    if prime(g):
+        t=g
         rev=0
-        while b:
-            r=b%10
+        while t:
+            r=t%10
             rev=rev*10+r
-            b=b//10
-        if rev==a:
-            print(a)
+            t=t//10
+        if rev==g:
+            print(g)
             break
-    a+=1
+    g+=1
             
