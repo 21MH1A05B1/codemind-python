@@ -1,9 +1,10 @@
 def fib(n):
-    if n<=1:
-        return n
-    return fib(n-1)+fib(n-2)
-###0:0,1:1,2:1,3:2,4:3,5:5
-n=int(input())#5
-for i in range(n):
-    print(fib(i),end=' ')#0
-
+    a,b=0,1
+    print(a,b,end=' ')
+    for i in range(2,n):
+        c=a+b
+        print(c,end=' ')
+        a=b
+        b=c
+n=int(input())
+fib(n)
