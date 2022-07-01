@@ -1,6 +1,6 @@
 n=input()
 n=n.lower()
-s=""
+s=''
 s1='aeiou'
 c=0
 for i in n:
