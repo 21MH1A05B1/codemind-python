@@ -7,7 +7,4 @@ c=[]
 for i in range(len(a)):
     if a[i] in b:
         c.append(a[i])
-for i in range(len(b)):
-    if b[i] in a:
-        c.append(b[i])
-print(len(c)//2)
+print(len(c))
