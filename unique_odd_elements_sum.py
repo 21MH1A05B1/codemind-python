@@ -1,12 +1,11 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
+o=[]
 s=0
 for i in a:
-    if i not in b:
-        b.append(i)
-s=0
-for i in b:
-    if i%2:
-        s+=i
+    if i not in o:
+        o.append(i)
+for i in o:
+    if i%2!=0:
+        s=s+i
 print(s)
