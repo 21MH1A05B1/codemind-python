@@ -7,6 +7,5 @@ for i in a:
         e.append(i)
 for i in e:
     if i%2==0:
-        s+=i
+        s=s+i
 print(s)
-    
