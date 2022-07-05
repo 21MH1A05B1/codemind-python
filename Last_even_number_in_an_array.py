@@ -1,6 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
-for i in range(len(a)):
+for i in range(n-1,-1,-1):
     if a[i]%2==0:
-        x=a[i]
-print(x)
+        print(a[i])
+        break
+    
