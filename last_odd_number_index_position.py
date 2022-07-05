@@ -1,7 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
-sum=0
-for i in range(len(a)):
-    if i%2!=0:
-        x=n-1
-print(x)
+for i in range(n-1,-1,-1):
+    if a[i]%2!=0:
+        print(i)
+        break
+    
