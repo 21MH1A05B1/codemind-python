@@ -1,10 +1,10 @@
 n=int(input())
-a=list(map(int,input().split()))
-b,c=map(int,input().split())
-d=max(a)
+x=list(map(int,input().split()))
+a,b=map(int,input().split())
+d=max(x)
 f=0
-for i in a:
-    if d not in range(b,c+1):
+for i in x:
+    if i not in range(a,b+1):
         f=1
 if f==1:
     print(d)
