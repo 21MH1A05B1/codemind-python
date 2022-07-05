@@ -1,10 +1,10 @@
 n=int(input())
-a=list(map(int,input().split()))
-b,c=map(int,input().split())
-x=0
-for i in a:
-    if i not in range(b,c+1):
+x=list(map(int,input().split()))
+a,b=map(int,input().split())
+c=0
+for i in x:
+    if i not in range(a,b+1):
+        c+=1
         print(i,end=' ')
-        x=1
-if x==0:
+if c==0:
     print('-1')
