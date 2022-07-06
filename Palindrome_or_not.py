@@ -9,4 +9,3 @@ for i in n:
     else:
         print('False')
         break
-    
