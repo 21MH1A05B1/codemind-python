@@ -1,11 +1,12 @@
-n=input()
-s=n.lower()
-x=list(s)
-b=[]
-for i in x:
-    if i not in b:
-        b.append(i)
-if len(b)==len(x):
+s=input()
+s=s.lower()
+b=len(s)
+a=[]
+for i in s:
+    if i not in a:
+        a.append(i)
+if b==len(a):
     print('True')
 else:
     print('False')
+        
