@@ -14,3 +14,4 @@ while n:
         n=res
         r=0
         res=0
+    
