@@ -1,15 +1,15 @@
-def digit(n):
-    if n==0:
-        return True
-    c=0
-    while n!=0:
-        n//=10
-        c+=1
-    return c
 n=int(input())
 a=list(map(int,input().split()))
 b=[]
+c=0
 for i in a:
-    b.append(digit(i))
-c=min(b)
-print(b.count(c))
+    i=str(i)
+    le=len(i)
+    b.append(le)
+d=0
+for i in b:
+    if i==min(b):
+        d+=1
+print(d)
+        
+    
