@@ -1,4 +1,3 @@
-
 n=int(input())
 t=n
 rev=0
