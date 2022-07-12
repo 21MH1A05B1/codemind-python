@@ -1,13 +1,13 @@
-s=list(map(str,input().split()))
-c=0
+n=input()
+n=n.lower()
+n=n.split()
+v='aeiou'
 a=[]
-for i in s:
-    for j in i:
-        if j in "aeiou":
-            c+=1
-        elif j in 'AEIOU':
-            c+=1
-    a.append(c)
+c=0
+for i in n:
     c=0
+    for j in i:
+        if j in v:
+            c+=1
+        a.append(c)
 print(max(a))
-        
