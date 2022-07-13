@@ -1,13 +1,10 @@
 n=input()
 n=n.lower()
 n=n.replace(" ","")
-r=[]
+l=list(n)
 c=0
-for i in n:
-    if n.count(i)==1:
-        r.append(i)
+for i in l:
+    if l.count(i)==1:
         c+=1
 print(c)
-
-        
         
