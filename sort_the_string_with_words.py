@@ -1,3 +1,2 @@
-n=input()
-n=n.split()
-print(*sorted(n))
+s=input().split(' ')
+print(*sorted(s),end=' ')
