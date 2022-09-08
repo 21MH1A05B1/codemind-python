@@ -6,16 +6,15 @@ def prime(n):
             return 0
     else:
         return 1
-        
 x=int(input())
-for i in range(0,x):
+for i in range(x):
     n=int(input())
     m=n
     for i in range(n,1,-1):
         if prime(i):
             a=i
             break
-    while m!=0:
+    while m:
         if prime(m):
             b=m
             break
@@ -24,3 +23,4 @@ for i in range(0,x):
         print(b)
     else:
         print(a)
+    
