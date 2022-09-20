@@ -1,9 +1,8 @@
 n=int(input())
-a=list(map(int,input().split()))
-b=[]
-for i in a:
-    if i==a.count(i):
-        if i not in b:
-            b.append(i)
-print(len(b))
-        
+x=list(map(int,input().split()))
+d=[]
+for i in x:
+    if i==x.count(i):
+        if i not in d:
+            d.append(i)
+print(len(d))
