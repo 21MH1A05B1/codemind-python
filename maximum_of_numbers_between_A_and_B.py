@@ -1,8 +1,8 @@
 n=int(input())
 x=list(map(int,input().split()))
 a,b=map(int,input().split())
-c=0
 d=[]
+c=0
 for i in x:
     if i>=a and i<=b:
         d.append(i)
@@ -10,5 +10,4 @@ for i in x:
 if c==0:
     print('-1')
 else:
-    print(max(d))
-        
+    print(max(*d))
