@@ -5,10 +5,10 @@ d=[]
 c=0
 for i in x:
     if x.count(i)==a:
-        d.append(i)
-e=set(d)
-if len(e)==0:
+        if i not in d:
+            d.append(i)
+            c+=1
+if c==0:
     print('-1')
 else:
-    print(*e)
-        
+    print(*d)
