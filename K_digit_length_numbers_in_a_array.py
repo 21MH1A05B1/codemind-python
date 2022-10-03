@@ -15,6 +15,3 @@ for i in d:
     if i==b:
         c+=1
 print(c)
-        
-        
-        
