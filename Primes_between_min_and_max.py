@@ -21,3 +21,4 @@ else:
         if prime(a[i]):
             d+=1
     print(d)
+ 
