@@ -1,12 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-s=c=0
+s=0
+c=0
 for i in set(a):
-    if a.count(i)==i:
+    if i==a.count(i):
         s+=i
         c+=1
 if c==0:
     print('-1')
 else:
-    b=s/c
-print("%.2f"%b)
+    avg=s/c
+print('%.2f'%avg)
