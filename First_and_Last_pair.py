@@ -1,7 +1,6 @@
-
 n = int(input())
 a = list(map(int,input().split()))
-if n%2!=0:
+if n%2:
     f = a[0:(n//2)+1]
     l = a[n-1:n//2:-1]
 else:
