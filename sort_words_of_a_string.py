@@ -1,15 +1,20 @@
-n=input()
-n=n.split(' ')
-for i in range(len(n)):
-    a=list(n[i])
-    for j in range(len(a)):
-        for k in range(len(a)):
-            if a[j]<a[k] and a[j] not in "`~!@#$%^&*()_-+=[]{};:',<>/?" and a[k] not in "`~!@#$%^&*()_-+=[]{};:',<>/?":
-                a[j],a[k]=a[k],a[j]
-    a=str(a)
-    a=a.replace("[","")
-    a=a.replace("]","")
-    a=a.replace(" ","")
-    a=a.replace(",","")
-    a=a.replace("'","")
-    print(a,end=' ')
+a=input().split()
+f='qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM'
+for i in a:
+    c=[]
+    for j in i:
+        if j in f:
+            c.append(j)
+    c.sort()
+    k=0
+    for d in range(len(i)):
+        if i[d] in f:
+            print(c[k],end='')
+            k+=1
+        else:
+            print(i[d],end='')
+    print(end=' ')
+
+
+    
+        
