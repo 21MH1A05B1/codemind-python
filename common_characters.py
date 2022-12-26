@@ -1,16 +1,16 @@
-
 s1=input().lower()
 s2=input().lower()
-s1,s2=s1.replace(" ",''),s2.replace(" ",'')
-a=list(set(s1) &set(s2))
+c=0
 s=''
-flag=0
-for i in a:
+l=list(set(s1)&set(s2))
+for i in l:
+    if i==' ':
+        continue
     s+=i
-    flag=1
-b=sorted(s)
-if flag==0:
-    print("-1")
+    c=1
+x=sorted(s)
+if c==0:
+    print('-1')
 else:
-    for i in b:
+    for i in x:
         print(i,end='')
