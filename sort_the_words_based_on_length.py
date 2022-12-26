@@ -1,4 +1,5 @@
-n=list(map(str,input().split()))
+n=input().split(" ")
+a=[]
 for i in range(len(n)):
     for j in range(len(n)):
         if i!=j and len(n[i])<len(n[j]):
